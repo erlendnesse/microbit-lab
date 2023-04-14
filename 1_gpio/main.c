@@ -40,8 +40,6 @@ typedef struct {
 
 int main(){
 
-
-
 	GPIO0->PIN_CNF[21] = 0b1;
 	GPIO0->PIN_CNF[22] = 0b1;
 	GPIO0->PIN_CNF[15] = 0b1;
@@ -58,16 +56,7 @@ int main(){
 	GPIO0->PIN_CNF[__BUTTON_B_PIN__] = 0b00000000000000000000000001100;
 
 
-
-
-	//LED on
-	//GPIO0->OUTSET = 0b00000001011010001000000000000000;
-
-
-
-
-
-	//int sleep = 0;
+	int sleep = 0;
 	while(1){
 
 
@@ -82,14 +71,8 @@ int main(){
 			GPIO1->OUTSET = 1 <<5;
 		}
 
-		/* Check if button B is pressed;
-		 * turn on LED matrix if it is. */
-
-		/* Check if button A is pressed;
-		 * turn off LED matrix if it is. */
-
-		//sleep = 10000;
-		//while(--sleep);
+		sleep = 10000;
+		while(--sleep);
 	}
 	return 0;
 }
