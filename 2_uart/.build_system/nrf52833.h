@@ -1237,7 +1237,7 @@ typedef struct {                                /*!< (@ 0x40002000) UART0 Struct
   __IOM uint32_t  ENABLE;                       /*!< (@ 0x00000500) Enable UART                                                */
   __IM  uint32_t  RESERVED9;
   __IOM UART_PSEL_Type PSEL;                    /*!< (@ 0x00000508) Unspecified                                                */
-  __IM  uint32_t  RXD;                          /*!< (@ 0x00000518) RXD register                                               */
+  __I M  uint32_t  RXD;                          /*!< (@ 0x00000518) RXD register                                               */
   __OM  uint32_t  TXD;                          /*!< (@ 0x0000051C) TXD register                                               */
   __IM  uint32_t  RESERVED10;
   __IOM uint32_t  BAUDRATE;                     /*!< (@ 0x00000524) Baud rate. Accuracy depends on the HFCLK source
