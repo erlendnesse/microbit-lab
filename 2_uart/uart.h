@@ -19,7 +19,7 @@ typedef struct {
     volatile uint32_t EVENTS_RXDRDY;
     volatile uint32_t RESERVED2[4];
     volatile uint32_t EVENTS_TXDRDY;
-    volatile uint32_t RESERVED3[1];
+    volatile uint32_t RESERVED3;
     volatile uint32_t EVENTS_ERROR;
     volatile uint32_t RESERVED4[7];
     volatile uint32_t EVENTS_RXTO;
@@ -32,14 +32,14 @@ typedef struct {
     volatile uint32_t ERRORSRC;
     volatile uint32_t RESERVED8[31];
     volatile uint32_t ENABLE;
-    volatile uint32_t RESERVED9[1];
+    volatile uint32_t RESERVED9;
     volatile uint32_t PSEL_RTS;
     volatile uint32_t PSEL_TXD;
     volatile uint32_t PSEL_CTS;
     volatile uint32_t PSEL_RXD;
     volatile uint32_t RXD;
     volatile uint32_t TXD;
-    volatile uint32_t RESERVED10[1];
+    volatile uint32_t RESERVED10;
     volatile uint32_t BAUDRATE;
     volatile uint32_t RESERVED11[17];
     volatile uint32_t CONFIG;
