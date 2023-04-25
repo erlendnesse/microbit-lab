@@ -7,10 +7,11 @@ int main() {
     gpiote_init();
     init_PPI();
 
+    int sleep = 0;
     while (1) {
-        int a = 2;
-        a = a+2;
-
-        a = a*a;
+        sleep = 100;
+        while(sleep--);
     }
+    
+    return 0;
 }

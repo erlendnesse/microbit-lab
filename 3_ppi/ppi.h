@@ -22,7 +22,7 @@ typedef struct {
 	volatile uint32_t CHEN;
 	volatile uint32_t CHENSET;
 	volatile uint32_t CHENCLR;
-	volatile uint32_t RESERVED1;
+	volatile uint32_t RESERVED1[1];
 	volatile PPI_CHANNEL_TYPE PPI_CH[20];
 	volatile uint32_t RESERVED2[148];
 	volatile uint32_t CHG[6];
